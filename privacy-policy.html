@@ -1,28 +1,172 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>Privacy Policy - Draft Calendar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー | トイレマップ</title>
+  <style>
+    :root {
+      --green: #4ade80;
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --border: #2e3350;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      line-height: 1.8;
+      padding: 40px 20px 80px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      width: 44px; height: 44px;
+      background: var(--green);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+    }
+    .app-name { font-size: 20px; font-weight: 700; color: var(--text); }
+    .doc-type { font-size: 13px; color: var(--muted); margin-top: 2px; }
+    h1 {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+    .updated {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--green);
+      margin: 36px 0 12px;
+      padding-left: 12px;
+      border-left: 3px solid var(--green);
+    }
+    p { color: var(--muted); margin-bottom: 12px; font-size: 15px; }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 12px;
+    }
+    ul li {
+      color: var(--muted);
+      font-size: 15px;
+      padding: 4px 0 4px 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: '•';
+      color: var(--green);
+      position: absolute;
+      left: 4px;
+    }
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+    .contact {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 40px;
+    }
+    .contact p { margin: 0; }
+    a { color: var(--green); text-decoration: none; }
+  </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p>Last updated: March 15, 2026</p>
+  <div class="container">
+    <div class="header">
+      <div class="logo">🚻</div>
+      <div>
+        <div class="app-name">トイレマップ</div>
+        <div class="doc-type">ReachQuiverCo.</div>
+      </div>
+    </div>
 
-<p>Draft Apps built the Draft Calendar app. This app is provided by Draft Apps and is intended for use as is.</p>
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">最終更新日：2026年5月2日</p>
 
-<h2>Information Collection and Use</h2>
-<p>This app does not collect any personal information. All data (photos, videos, folders) is stored locally on your device only and is never transmitted to any server.</p>
+    <p>ReachQuiverCo.（以下「当社」）は、トイレマップアプリ（以下「本アプリ」）において、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本ポリシーは、本アプリが収集する情報とその利用方法について説明します。</p>
 
-<h2>Data Storage</h2>
-<p>All data is stored locally on your device using AsyncStorage. We do not have access to your data.</p>
+    <h2>1. 収集する情報</h2>
+    <div class="section">
+      <ul>
+        <li><strong style="color:#e2e8f0">位置情報</strong>：現在地周辺のトイレを地図上に表示するために使用します。位置情報はデバイス上でのみ処理され、サーバーに保存されません。</li>
+        <li><strong style="color:#e2e8f0">評価・レビュー投稿内容</strong>：ユーザーが投稿した評価（★）をサービス改善のために保存します。</li>
+        <li><strong style="color:#e2e8f0">アプリ使用状況</strong>：クラッシュレポートや匿名の利用統計（個人を特定しない形式）。</li>
+      </ul>
+    </div>
 
-<h2>Third Party Services</h2>
-<p>This app does not use any third party services that collect information.</p>
+    <h2>2. 情報の利用目的</h2>
+    <div class="section">
+      <ul>
+        <li>現在地周辺のトイレを地図上に表示するため</li>
+        <li>トイレまでの距離を計算するため</li>
+        <li>ユーザーの評価・レビューを反映させるため</li>
+        <li>アプリの品質改善・不具合修正のため</li>
+      </ul>
+    </div>
 
-<h2>Changes to This Privacy Policy</h2>
-<p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes.</p>
+    <h2>3. 第三者サービスの利用</h2>
+    <div class="section">
+      <p>本アプリは以下の第三者サービスを利用しています。</p>
+      <ul>
+        <li><strong style="color:#e2e8f0">Supabase</strong>：トイレデータおよびレビューデータの保存・取得に使用します。<a href="https://supabase.com/privacy">プライバシーポリシー</a></li>
+        <li><strong style="color:#e2e8f0">OpenStreetMap / Overpass API</strong>：公共トイレの位置情報取得に使用します。個人情報は送信されません。<a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">プライバシーポリシー</a></li>
+        <li><strong style="color:#e2e8f0">Apple Maps（Linking）</strong>：ナビゲーション機能のためにApple Mapsを起動します。</li>
+      </ul>
+    </div>
 
-<h2>Contact Us</h2>
-<p>If you have any questions about this Privacy Policy, please contact us at: draftapps.info@gmail.com</p>
+    <h2>4. 位置情報について</h2>
+    <div class="section">
+      <p>本アプリは、アプリ使用中のみ位置情報にアクセスします（「アプリ使用中のみ許可」）。位置情報は周辺トイレの検索・距離計算のみに使用し、マーケティング・広告目的では使用しません。位置情報の利用を許可しない場合、一部機能が制限されます。</p>
+    </div>
+
+    <h2>5. データの保存期間</h2>
+    <div class="section">
+      <ul>
+        <li>位置情報：サーバーには保存されません</li>
+        <li>評価・レビューデータ：アカウント削除または当社がサービスを終了するまで保存</li>
+      </ul>
+    </div>
+
+    <h2>6. 子供のプライバシー</h2>
+    <div class="section">
+      <p>本アプリは13歳未満の子供を対象としておらず、意図的に13歳未満の個人情報を収集することはありません。</p>
+    </div>
+
+    <h2>7. ポリシーの変更</h2>
+    <div class="section">
+      <p>本ポリシーは予告なく変更される場合があります。重要な変更がある場合はアプリ内でお知らせします。変更後も本アプリを継続してご利用いただいた場合、変更後のポリシーに同意したものとみなします。</p>
+    </div>
+
+    <div class="contact">
+      <h2 style="margin-top:0">8. お問い合わせ</h2>
+      <p>プライバシーに関するご質問・ご要望は以下までご連絡ください。</p>
+      <p style="margin-top:12px">事業者名：ReachQuiverCo.<br>
+      メール：<a href="mailto:support@reachquiverco.com">support@reachquiverco.com</a></p>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,41 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>Terms of Service - Draft Calendar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>利用規約 | トイレマップ</title>
+  <style>
+    :root {
+      --green: #4ade80;
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --border: #2e3350;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      line-height: 1.8;
+      padding: 40px 20px 80px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      width: 44px; height: 44px;
+      background: var(--green);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+    }
+    .app-name { font-size: 20px; font-weight: 700; color: var(--text); }
+    .doc-type { font-size: 13px; color: var(--muted); margin-top: 2px; }
+    h1 {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+    .updated {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--green);
+      margin: 36px 0 12px;
+      padding-left: 12px;
+      border-left: 3px solid var(--green);
+    }
+    p { color: var(--muted); margin-bottom: 12px; font-size: 15px; }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 12px;
+    }
+    ul li {
+      color: var(--muted);
+      font-size: 15px;
+      padding: 4px 0 4px 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: '•';
+      color: var(--green);
+      position: absolute;
+      left: 4px;
+    }
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+    .contact {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 40px;
+    }
+    .contact p { margin: 0; }
+    a { color: var(--green); text-decoration: none; }
+    .warning {
+      background: rgba(251,146,60,0.1);
+      border: 1px solid rgba(251,146,60,0.3);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+    }
+    .warning p { color: #fb923c; margin: 0; font-size: 14px; }
+  </style>
 </head>
 <body>
-<h1>Terms of Service</h1>
-<p>Last updated: March 15, 2026</p>
+  <div class="container">
+    <div class="header">
+      <div class="logo">🚻</div>
+      <div>
+        <div class="app-name">トイレマップ</div>
+        <div class="doc-type">ReachQuiverCo.</div>
+      </div>
+    </div>
 
-<p>By downloading or using Draft Calendar, you agree to these terms.</p>
+    <h1>利用規約</h1>
+    <p class="updated">最終更新日：2026年5月2日</p>
 
-<h2>1. Acceptance of Terms</h2>
-<p>By accessing or using our app, you agree to be bound by these Terms of Service. If you do not agree, please do not use the app.</p>
+    <p>本規約は、ReachQuiverCo.（以下「当社」）が提供するトイレマップアプリ（以下「本アプリ」）の利用条件を定めるものです。本アプリをご利用いただくことで、本規約に同意したものとみなします。</p>
 
-<h2>2. Permitted Use</h2>
-<p>Draft Calendar is intended for personal, lawful use only. You agree to use this app only for storing your own personal photos and videos.</p>
+    <h2>1. サービスの概要</h2>
+    <div class="section">
+      <p>本アプリは、OpenStreetMapおよびSupabaseのデータを利用して、周辺のトイレ情報を地図上に表示するサービスです。</p>
+    </div>
 
-<h2>3. Prohibited Content</h2>
-<p>You must NOT use this app to store, share, or distribute:</p>
-<ul>
-<li>Child sexual abuse material (CSAM) or any content that exploits minors</li>
-<li>Content that is illegal under applicable laws</li>
-<li>Content that infringes on the rights of others</li>
-<li>Any content promoting violence, terrorism, or hate speech</li>
-</ul>
-<p>Violation of this policy will result in immediate termination of your right to use the app and may be reported to law enforcement authorities.</p>
+    <h2>2. 情報の正確性について</h2>
+    <div class="section">
+      <div class="warning">
+        <p>⚠️ 本アプリに表示されるトイレ情報（営業時間・設備・場所等）は正確性を保証するものではありません。</p>
+      </div>
+      <ul>
+        <li>表示されている営業時間・営業状況が実際と異なる場合があります</li>
+        <li>トイレが閉鎖・撤去されている場合があります</li>
+        <li>設備情報（バリアフリー・授乳室等）が実態と異なる場合があります</li>
+        <li>情報は予告なく変更される場合があります</li>
+      </ul>
+      <p>実際の利用前に現地でご確認ください。</p>
+    </div>
 
-<h2>4. Privacy</h2>
-<p>All data is stored locally on your device. We do not collect, access, or transmit your personal data. Please refer to our Privacy Policy for details.</p>
+    <h2>3. 自己責任の原則</h2>
+    <div class="section">
+      <p>本アプリの情報を参考にした行動はすべてユーザーの自己責任とします。当社は、本アプリの情報に基づく行動によって生じた損害・不利益について一切の責任を負いません。</p>
+    </div>
 
-<h2>5. Disclaimer</h2>
-<p>Draft Calendar is provided "as is" without warranty of any kind. We are not responsible for any loss of data.</p>
+    <h2>4. 禁止事項</h2>
+    <div class="section">
+      <ul>
+        <li>虚偽・不正確な評価・レビューの投稿</li>
+        <li>他のユーザーや第三者を誹謗中傷する内容の投稿</li>
+        <li>本アプリのシステムへの不正アクセス・改ざん</li>
+        <li>商業目的での無断利用・データの無断収集</li>
+        <li>法令または公序良俗に反する利用</li>
+        <li>その他、当社が不適切と判断する行為</li>
+      </ul>
+    </div>
 
-<h2>6. Changes to Terms</h2>
-<p>We may update these terms at any time. Continued use of the app constitutes acceptance of the new terms.</p>
+    <h2>5. 課金・サブスクリプション</h2>
+    <div class="section">
+      <ul>
+        <li>プレミアムプランは有料サービスです</li>
+        <li>料金はApp Store上に表示された金額となります</li>
+        <li>サブスクリプションは期間終了の24時間前までにキャンセルしない限り自動更新されます</li>
+        <li>購入後のキャンセル・返金はApp Storeのポリシーに従います</li>
+        <li>無料プランでも基本機能はご利用いただけます</li>
+      </ul>
+    </div>
 
-<h2>7. Contact</h2>
-<p>For questions regarding these terms, contact us at: draftapps.info@gmail.com</p>
+    <h2>6. サービスの変更・停止</h2>
+    <div class="section">
+      <p>当社は以下の権利を留保します。</p>
+      <ul>
+        <li>事前通知なしにサービス内容を変更する権利</li>
+        <li>メンテナンス・障害等によりサービスを一時停止する権利</li>
+        <li>サービスを終了する権利</li>
+      </ul>
+      <p>サービス変更・停止による損害について当社は責任を負いません。</p>
+    </div>
+
+    <h2>7. 知的財産権</h2>
+    <div class="section">
+      <p>本アプリのデザイン・コード・ロゴ等の知的財産権は当社に帰属します。OpenStreetMapのデータはODbLライセンスに基づきます。</p>
+    </div>
+
+    <h2>8. 免責事項</h2>
+    <div class="section">
+      <ul>
+        <li>当社は本アプリの動作を保証しません</li>
+        <li>本アプリの利用により生じた直接・間接的な損害について責任を負いません</li>
+        <li>第三者サービス（Supabase・OpenStreetMap等）の障害による影響について責任を負いません</li>
+      </ul>
+    </div>
+
+    <h2>9. 規約の変更</h2>
+    <div class="section">
+      <p>当社は本規約を予告なく変更できるものとします。変更後も本アプリを継続してご利用いただいた場合、変更後の規約に同意したものとみなします。</p>
+    </div>
+
+    <h2>10. 準拠法・管轄裁判所</h2>
+    <div class="section">
+      <p>本規約は日本法に準拠します。本規約に関する紛争については、東京地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
+    </div>
+
+    <div class="contact">
+      <h2 style="margin-top:0">11. お問い合わせ</h2>
+      <p>本規約に関するご質問は以下までご連絡ください。</p>
+      <p style="margin-top:12px">事業者名：ReachQuiverCo.<br>
+      メール：<a href="mailto:support@reachquiverco.com">support@reachquiverco.com</a></p>
+    </div>
+  </div>
 </body>
 </html>
